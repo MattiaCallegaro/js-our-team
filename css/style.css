@@ -1,13 +1,16 @@
 body {
     font-family: "Catamaran", sans-serif;
-    
+    background-image:url(../img/thumb-1920-1230061.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat
 }
 
 .bg-turquoise{
     color: turquoise;
 }
 .bg-pink{
-    color: rgb(233, 51, 163);
+    color: rgb(222, 40, 143);
 }
 .b-role{
     font-weight: 600
