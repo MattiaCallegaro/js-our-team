@@ -3,3 +3,36 @@ body {
     
 }
 
+.bg-turquoise{
+    color: turquoise;
+}
+.bg-pink{
+    color: rgb(233, 51, 163);
+}
+.b-role{
+    font-weight: 600
+}
+.team-card{
+    background-color: rgb(249, 146, 21);
+}
+
+.team-card{
+display: flex;
+flex-grow: 1;
+background-color: gray;
+}
+
+.card-image{
+    width: 120px;
+    
+}
+.card-text{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(233, 51, 163);
+}

@@ -47,13 +47,13 @@ const createMemberCard = (member) => {
   //card effettiva
   const card =
     `<div class="col-12 col-md-6 col-lg-4">
-              <div class="team-card d-flex flex-row bg-black ">
+              <div class="team-card">
                 <div class="card-image">
-                    <img src="./img/${img}" alt="" class="img-fluid " >
+                    <img src="./img/${img}" alt="" class=" img-fluid" >
                 </div>
                 <div class="card-text">
-                    <h4>${name}</h4>
-                    <p>${role}</p>
+                    <h4 class="bg-turquoise">${name}</h4>
+                    <p class="b-role">${role}</p>
                     <a href="">${email}</a>
                 </div>
               </div>
