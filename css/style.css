@@ -39,3 +39,29 @@ a{
     text-decoration: none;
     color: rgb(233, 51, 163);
 }
+
+.form-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 50%;
+}
+
+form div{
+    margin-bottom: 20px;
+}
+.my-button{
+    border-radius: 5%;
+    background-color:rgb(233, 51, 163); 
+    border-color: turquoise;
+    color: turquoise;
+    width: 20%;
+    transition: 0.3s ;
+}
+
+.my-button:hover{
+    background-color: transparent;
+}
