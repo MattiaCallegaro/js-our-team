@@ -47,11 +47,14 @@ const createMemberCard = (member) => {
   //card effettiva
   const card =`<div class="col-12">
                 <div class="card-image">
-                    <img src="./img/female1.png" alt="">
+                    <img src="./img/${img}" alt="" >
                 </div>
                 <div class="card-text">
-                    <h4></h4>
-                    <p></p>
+                    <h4>${name}</h4>
+                    <p>${role}</p>
+                    <a href="">${email}</a>
                 </div>
             </div>`
+
+            return card
 }
