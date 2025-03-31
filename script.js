@@ -63,10 +63,10 @@ const createMemberCard = (member) => {
 }
 
 //recupero elementi dom
-const name = document.getElementById("name");
-const role = document.getElementById("role");
-const email = document.getElementById("email");
-const img = document.getElementById("img");
+const nameField = document.getElementById("name");
+const roleField = document.getElementById("role");
+const emailField = document.getElementById("email");
+const imgField = document.getElementById("img");
 const button = document.getElementById("send");
 const membersForm = document.getElementById("team-members");
 
@@ -88,6 +88,31 @@ const renderTeam = (array) => {
 //chiamata funzione
 renderTeam(teamMembers);
 
+//prevengo il refresh della pagina sul bottone
 button.addEventListener("click" ,(e) =>{
   e.preventDefault();
-})
+
+//vado a controllare i campi del form
+  const name = nameField.value;
+  const role = roleField.value;
+  const email =emailField.value;
+  const img = imgField.value;
+
+//controllo se c'é qualcosa di diverso inserito
+  if(!name || !role || !email || !img){
+    alert("Controlla che i campi siano compilati corretamente")
+    return;
+  }
+//creo il nuovo membro da inserire nell'array
+  const newMember = {
+    name,
+    role,
+    email,
+    img
+  };
+  teamMembers.push(newMember);
+
+  renderTeam(teamMembers);
+
+  document.getElementById("member-form").reset();
+});
