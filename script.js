@@ -42,21 +42,24 @@ const teamMembers = [
 const createMemberCard = (member) => {
 
   //member destrutturato per tutti gli elementi di teamMembers
-  const { name, role, email, img} = member
+  const { name, role, email, img } = member
 
   //card effettiva
-  const card =`<div class="col-12">
+  const card =
+    `<div class="col-12 col-md-6 col-lg-4">
+              <div class="team-card d-flex flex-row bg-black ">
                 <div class="card-image">
-                    <img src="./img/${img}" alt="" class="img-fluid" >
+                    <img src="./img/${img}" alt="" class="img-fluid " >
                 </div>
                 <div class="card-text">
                     <h4>${name}</h4>
                     <p>${role}</p>
                     <a href="">${email}</a>
                 </div>
-            </div>`
+              </div>
+          </div>`
 
-            return card
+  return card
 }
 
 //arrow function per il contenuto array
@@ -65,7 +68,7 @@ const renderTeam = (array) => {
   //creo una variabile vuota per mettere insieme tutte le colonne sotto forma di stringa
   let cards = "";
   //creo un ciclo for per prendere il parametro cards
-  for(let i=0; i< array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     //concateno il valore di cards con quello di createMembersCard
     cards += createMemberCard(array[i])
   }
