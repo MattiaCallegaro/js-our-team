@@ -62,6 +62,15 @@ const createMemberCard = (member) => {
   return card
 }
 
+//recupero elementi dom
+const name = document.getElementById("name");
+const role = document.getElementById("role");
+const email = document.getElementById("email");
+const img = document.getElementById("img");
+const button = document.getElementById("send");
+const membersForm = document.getElementById("team-members");
+
+
 //arrow function per il contenuto array
 const renderTeam = (array) => {
 
@@ -78,3 +87,7 @@ const renderTeam = (array) => {
 
 //chiamata funzione
 renderTeam(teamMembers);
+
+button.addEventListener("click" ,(e) =>{
+  e.preventDefault();
+})
