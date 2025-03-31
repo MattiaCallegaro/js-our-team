@@ -36,3 +36,22 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+// funzione che mi crea la card
+
+const createMemberCard = (member) => {
+
+  //member destrutturato per tutti gli elementi di teamMembers
+  const { name, role, email, img} = member
+
+  //card effettiva
+  const card =`<div class="col-12">
+                <div class="card-image">
+                    <img src="./img/female1.png" alt="">
+                </div>
+                <div class="card-text">
+                    <h4></h4>
+                    <p></p>
+                </div>
+            </div>`
+}
